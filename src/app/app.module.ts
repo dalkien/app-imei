@@ -4,13 +4,18 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { HttpClientModule } from '@angular/common/http'
+import { FlujoconsultaModule } from './Modules/flujoconsulta/flujoconsulta.module';
+
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FlujoconsultaModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

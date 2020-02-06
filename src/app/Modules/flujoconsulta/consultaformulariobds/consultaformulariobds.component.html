@@ -1,0 +1,14 @@
+<p>resultado de la ejecucion es </p>
+<div *ngIf="getConsulta()"> 
+    <h2> {{respuestaDatos.isValid }} </h2>
+    <p>  {{respuestaDatos.message}} </p>
+    <p> {{mensaje[0]}}</p>
+</div>
+<div *ngIf="getMensaje()">
+    <p>resultado de la ejecucion es mensaje </p>
+    <p> {{mensaje.ConsultaBDAPositiva.message }} </p>
+    <!-- <div *ngFor="let c of mensaje | keyvalue" >
+        <p> {{c.key}} </p>
+        <p> {{c.value}} </p>
+    </div> -->
+</div>
